@@ -23,10 +23,7 @@ We will use the [viya4-deployment project](https://github.com/sassoftware/viya4-
    ```bash
    # as cloud-user on your Linux host in RACE
    cd ~
-
-   # Install Git if needed
-   yum install git -y
-   
+ 
    # clone the viya4-deployment repo
    git clone https://github.com/sassoftware/viya4-deployment
 
