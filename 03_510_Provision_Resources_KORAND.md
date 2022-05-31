@@ -284,6 +284,7 @@ echo $NS > ~/MY_NS.txt
    node_pools = {
      cas = {
        "vm_type" = "m5.2xlarge"
+       "cpu_type" = "AL2_x86_64" # by KORAND
        "os_disk_type" = "gp2"
        "os_disk_size" = 200
        "os_disk_iops" = 0
@@ -300,6 +301,7 @@ echo $NS > ~/MY_NS.txt
      },
      compute = {
        "vm_type" = "m5.8xlarge"
+       "cpu_type" = "AL2_x86_64" # by KORAND
        "os_disk_type" = "gp2"
        "os_disk_size" = 200
        "os_disk_iops" = 0
@@ -317,6 +319,7 @@ echo $NS > ~/MY_NS.txt
      },
      connect = {
        "vm_type" = "m5.8xlarge"
+       "cpu_type" = "AL2_x86_64" # by KORAND
        "os_disk_type" = "gp2"
        "os_disk_size" = 200
        "os_disk_iops" = 0
@@ -334,6 +337,7 @@ echo $NS > ~/MY_NS.txt
      },
      stateless = {
        "vm_type" = "m5.4xlarge"
+       "cpu_type" = "AL2_x86_64" # by KORAND
        "os_disk_type" = "gp2"
        "os_disk_size" = 200
        "os_disk_iops" = 0
@@ -350,6 +354,7 @@ echo $NS > ~/MY_NS.txt
      },
      stateful = {
        "vm_type" = "m5.4xlarge"
+       "cpu_type" = "AL2_x86_64" # by KORAND
        "os_disk_type" = "gp2"
        "os_disk_size" = 200
        "os_disk_iops" = 0
