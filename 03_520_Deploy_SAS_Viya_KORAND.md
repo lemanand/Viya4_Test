@@ -24,6 +24,9 @@ We will use the [viya4-deployment project](https://github.com/sassoftware/viya4-
    # as cloud-user on your Linux host in RACE
    cd ~
 
+   # Install Git if needed
+   yum install git -y
+   
    # clone the viya4-deployment repo
    git clone https://github.com/sassoftware/viya4-deployment
 
@@ -42,7 +45,8 @@ We will use the [viya4-deployment project](https://github.com/sassoftware/viya4-
    # creates file /home/cloud-user/.gitconfig
 
    # copy it into the container files, too
-   cp /home/cloud-user/.gitconfig /home/cloud-user/viya4-deployment
+   cp /root/.gitconfig /root/viya4-deployment
+   # cp /home/cloud-user/.gitconfig /home/cloud-user/viya4-deployment
    # that's the top-level dir *inside* the container
    ```
 
