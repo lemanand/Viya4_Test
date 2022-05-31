@@ -21,7 +21,10 @@ To stand up the infrastructure we need to deploy SAS Viya, we will rely on the [
    ```bash
    # as cloud-user on your Linux host in RACE
    cd ~
-
+   
+   # Install Git if needed
+   yum install git -y
+   
    # clone the viya4-iac-aws repo
    git clone https://github.com/sassoftware/viya4-iac-aws
 
