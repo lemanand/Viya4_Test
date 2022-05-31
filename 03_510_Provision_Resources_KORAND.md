@@ -244,7 +244,8 @@ echo $NS > ~/MY_NS.txt
    # ****************  REQUIRED VARIABLES  ****************
    # These required variables' values MUST be provided by the User
    prefix                                  = "$MY_PREFIX"
-   location                                = "us-east-1" # e.g., "us-east-1"
+   # location                                = "us-east-1" # e.g., "us-east-1" by KORAND
+   location                                = "ap-northeast-2" # by KORAND
    ssh_public_key                          = "~/.ssh/id_rsa.pub"
    create_static_kubeconfig                = true
    # ****************  REQUIRED VARIABLES  ****************
@@ -256,7 +257,7 @@ echo $NS > ~/MY_NS.txt
    # Include CIDR ranges for the sas.com domains
    #default_public_access_cidrs             = ["71.135.0.0/16"]  # e.g., ["123.45.6.89/32"]
    # we allow access from the RACE VMWARE and RACE Azure clients network
-   default_public_access_cidrs         = ["149.173.0.0/16", "71.135.0.0/16", "52.226.102.80/32", "52.226.102.81/32"]
+   #default_public_access_cidrs         = ["149.173.0.0/16", "71.135.0.0/16", "52.226.102.80/32", "52.226.102.81/32"] # by KORAND
    # **************  RECOMENDED  VARIABLES  ***************
 
    # Optional: tags for all tagable items in your cluster.
