@@ -168,7 +168,7 @@ on linux_amd64
 From now on, we'll use the aliases for the AWS CLI and for Terraform. If you open a new terminal window, then you'll need to redefine those aliases (unless you add them to your `.bash_profile`).
 
 ## Identify yourself 
-
+ 
 
 The IAC utility can be configured to label and/or tag resources. Since all students in this workshop share the same account/role, this is an important configuration! 
 
