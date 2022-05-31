@@ -647,11 +647,19 @@ It's often useful to have command-line ability (or other client, like the Lens I
    # as cloud-user on your Linux host in RACE
 
    # Use kubectl inside the viya4-iac-aws container
+   # docker container run --rm --group-add root \
+   # --user $(id -u):$(id -g) \
+   # -v $HOME/.aws:/.aws \
+   # -v $HOME/.ssh:/.ssh \
+   # -v $HOME/.kube:/.kube \
+   # --entrypoint kubectl \
+   # viya4-iac-aws get nodes
+   
    docker container run --rm --group-add root \
    --user $(id -u):$(id -g) \
-   -v $HOME/.aws:/.aws \
-   -v $HOME/.ssh:/.ssh \
-   -v $HOME/.kube:/.kube \
+   -v $HOME/.aws:/root/.aws \
+   -v $HOME/.ssh:/root/.ssh \
+   -v $HOME/.kube:/root/.kube \
    --entrypoint kubectl \
    viya4-iac-aws get nodes
 
