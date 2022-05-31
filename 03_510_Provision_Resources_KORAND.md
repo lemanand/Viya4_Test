@@ -662,7 +662,7 @@ It's often useful to have command-line ability (or other client, like the Lens I
    -v $HOME/.kube:/root/.kube \
    --entrypoint kubectl \
    viya4-iac-aws get nodes
-
+  
    # But since we also have kubectl installed locally and we're providing the default named configuration file...
    kubectl get nodes
      ```
