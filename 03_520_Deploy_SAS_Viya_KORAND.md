@@ -229,7 +229,9 @@ With these preliminary prerequisites in place, it's time to proceed with deployi
    MY_PREFIX=`cat ~/MY_PREFIX.txt`
    MY_PREFIX=${MY_PREFIX,,}        # convert to all lower-case
 
-   export V4_CFG_INGRESS_FQDN="${MY_PREFIX}.gelsandbox.aws.unx.sas.com"
+   # export V4_CFG_INGRESS_FQDN="${MY_PREFIX}.gelsandbox.aws.unx.sas.com"
+   export V4_CFG_INGRESS_FQDN="${MY_PREFIX}.aws.unx.sas.com" # by KORAND
+   
    # We will setup this DNS alias in a future step
 
    tee  ~/project/deploy/${NS}/${NS}-viyavars.yaml > /dev/null << EOF
@@ -242,7 +244,8 @@ With these preliminary prerequisites in place, it's time to proceed with deployi
    DEPLOY: true # Set to false to stop at generating the manifest
 
    #LOADBALANCER_SOURCE_RANGES: ['<cluster_nat_ip>/32']
-   LOADBALANCER_SOURCE_RANGES: ["149.173.0.0/16", "71.135.0.0/16"]
+   # LOADBALANCER_SOURCE_RANGES: ["149.173.0.0/16", "71.135.0.0/16"] # by KORAND
+   
    # Spexify the usual CIDR ranges assigned to SAS
 
    ## Storage - we let the tool create the SC for us
