@@ -244,7 +244,7 @@ With these preliminary prerequisites in place, it's time to proceed with deployi
    DEPLOY: true # Set to false to stop at generating the manifest
 
    #LOADBALANCER_SOURCE_RANGES: ['<cluster_nat_ip>/32']
-   # LOADBALANCER_SOURCE_RANGES: ["149.173.0.0/16", "71.135.0.0/16"] # by KORAND
+   LOADBALANCER_SOURCE_RANGES: ["149.173.0.0/16", "71.135.0.0/16"] # by KORAND
    
    # Spexify the usual CIDR ranges assigned to SAS
 
