@@ -133,9 +133,11 @@ At this point, you certainly understand we're running Terraform and the AWS CLI 
 # as cloud-user on your Linux host in RACE
 
 # Define
-alias aws="docker container run --rm --group-add root --user $(id -u):$(id -g) -v $HOME/.aws:/.aws --entrypoint aws viya4-iac-aws"
+# alias aws="docker container run --rm --group-add root --user $(id -u):$(id -g) -v $HOME/.aws:/.aws --entrypoint aws viya4-iac-aws"
+alias aws="docker container run --rm --group-add root --user $(id -u):$(id -g) -v $HOME/.aws:/root/.aws --entrypoint aws viya4-iac-aws"
 
-alias terraform="docker container run --rm --group-add root --user $(id -u):$(id -g) -v $HOME/.aws:/.aws -v $HOME/.ssh:/.ssh -v $HOME/viya4-iac-aws:/workspace --entrypoint terraform viya4-iac-aws"
+# alias terraform="docker container run --rm --group-add root --user $(id -u):$(id -g) -v $HOME/.aws:/.aws -v $HOME/.ssh:/.ssh -v $HOME/viya4-iac-aws:/workspace --entrypoint terraform viya4-iac-aws"
+alias terraform="docker container run --rm --group-add root --user $(id -u):$(id -g) -v $HOME/.aws:/root.aws -v $HOME/.ssh:/root/.ssh -v $HOME/viya4-iac-aws:/workspace --entrypoint terraform viya4-iac-aws"
 
 # Verify
 aws --version
