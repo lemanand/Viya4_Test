@@ -663,6 +663,11 @@ It's often useful to have command-line ability (or other client, like the Lens I
    --entrypoint kubectl \
    viya4-iac-aws get nodes
   
+   # Install [Kubectl](http://pwittrock.github.io/docs/tasks/tools/install-kubectl/) if needed
+   curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+   chmod +x ./kubectl
+   sudo mv ./kubectl /usr/local/bin/kubectl
+    
    # But since we also have kubectl installed locally and we're providing the default named configuration file...
    kubectl get nodes
      ```
