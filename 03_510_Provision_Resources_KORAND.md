@@ -65,20 +65,30 @@ To stand up the infrastructure we need to deploy SAS Viya, we will rely on the [
    ```bash
    # as cloud-user on your Linux host in RACE
 
+   [root@ip-10-0-11-160 /]# aws configure
+AWS Access Key ID [None]: XXX
+AWS Secret Access Key [None]: XXX
+Default region name [None]: ap-northeast-2
+Default output format [None]: json
+
    # aws configure list
-   docker container run --rm --group-add root \
-     --user $(id -u):$(id -g) \
-     -v $HOME/.aws:/.aws \
-     --entrypoint aws \
-     viya4-iac-aws configure list
+#   docker container run --rm --group-add root \
+#     --user $(id -u):$(id -g) \
+#     -v $HOME/.aws:/.aws \
+#     --entrypoint aws \
+#     viya4-iac-aws configure list
+
+docker container run --rm --group-add root   --user $(id -u):$(id -g)   -v $HOME/.aws:/root/.aws   --entrypoint aws   viya4-iac-aws configure list
 
    # aws sts get-caller-identity
-   docker container run --rm --group-add root \
-     --user $(id -u):$(id -g) \
-     -v $HOME/.aws:/.aws \
-     --entrypoint aws \
-     viya4-iac-aws sts get-caller-identity \
-       --output json
+#  docker container run --rm --group-add root \
+#     --user $(id -u):$(id -g) \
+#     -v $HOME/.aws:/.aws \
+#     --entrypoint aws \
+#     viya4-iac-aws sts get-caller-identity \
+#       --output json
+       
+docker container run --rm --group-add root      --user $(id -u):$(id -g)      -v $HOME/.aws:/root/.aws      --entrypoint aws      viya4-iac-aws sts get-caller-identity        --output json
    ```
 
    Results similar to:
