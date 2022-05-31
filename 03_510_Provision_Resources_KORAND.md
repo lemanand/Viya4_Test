@@ -209,7 +209,7 @@ echo $NS > ~/MY_NS.txt
 
    ```bash
    # as cloud-user on your Linux host in RACE
-
+   
    # ensure there is a .ssh dir in $HOME
    ansible localhost -m file \
       -a "path=$HOME/.ssh mode=0700 state=directory"
