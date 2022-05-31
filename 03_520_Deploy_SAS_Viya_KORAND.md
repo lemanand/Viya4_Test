@@ -157,6 +157,10 @@ We will use the [viya4-deployment project](https://github.com/sassoftware/viya4-
         See "man sudo_root" for details.
 
         jumpuser@ip-192-168-129-70:~$ 
+        
+        # by KORAND
+        ssh -i ~/.ssh/id_rsa jumpuser@3.36.0.162
+
         ```
 
 ## Create the directory structure in NFS
