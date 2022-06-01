@@ -257,9 +257,13 @@ With these preliminary prerequisites in place, it's time to proceed with deployi
    # JUMP_SVR_PRIVATE_KEY: '/config/jump_svr_private_key'
 
    ## SAS API Access
-   V4_CFG_SAS_API_KEY: 'nQ7TrwjasGoP1lkrx4ZeCEI2HaGYnIzG' # by KORAND
-   V4_CFG_SAS_API_SECRET: 'KDDM41a8roFGGrJF' # by KORAND
-   V4_CFG_ORDER_NUMBER: 0B2YYH # by KORAND
+   V4_CFG_SAS_API_KEY: 'otHGJtno8QGTqys9vRGxmgLOCnVsHWG2'
+   V4_CFG_SAS_API_SECRET: 'banKYbGZyNkDXbBO'
+   V4_CFG_ORDER_NUMBER: 9CKY1V
+   
+   # V4_CFG_SAS_API_KEY: 'nQ7TrwjasGoP1lkrx4ZeCEI2HaGYnIzG' # by KORAND
+   # V4_CFG_SAS_API_SECRET: 'KDDM41a8roFGGrJF' # by KORAND
+   # V4_CFG_ORDER_NUMBER: 0B2YYH # by KORAND
 
    ## CR Access
    # V4_CFG_CR_USER: <container_registry_user>
@@ -283,10 +287,10 @@ With these preliminary prerequisites in place, it's time to proceed with deployi
    V4_CFG_CONNECT_ENABLE_LOADBALANCER: false
 
    ## Cadence and version
-   # V4_CFG_CADENCE_NAME: 'stable'
-   # V4_CFG_CADENCE_VERSION: '2021.2.5'
-   V4_CFG_CADENCE_NAME: 'lts' # by KORAND
-   V4_CFG_CADENCE_VERSION: '2022.1' # by KORAND
+   V4_CFG_CADENCE_NAME: 'stable'
+   V4_CFG_CADENCE_VERSION: '2021.2.5'
+   # V4_CFG_CADENCE_NAME: 'lts' # by KORAND
+   # V4_CFG_CADENCE_VERSION: '2022.1' # by KORAND
 
    ## CAS Configuration
    V4_CFG_CAS_WORKER_COUNT: '3'
