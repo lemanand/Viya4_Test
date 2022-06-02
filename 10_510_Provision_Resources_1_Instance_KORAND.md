@@ -255,91 +255,9 @@ echo $NS > ~/MY_NS.txt
    efs_performance_mode                    = "generalPurpose"
    storage_type                            = "standard"
 
-   ## Cluster Node Pools config
-   node_pools = {
-     cas = {
-       "vm_type" = "m5.2xlarge"
-       "os_disk_type" = "gp2"
-       "os_disk_size" = 200
-       "os_disk_iops" = 0
-       "min_nodes" = 4
-       "max_nodes" = 5
-       "node_taints" = ["workload.sas.com/class=cas:NoSchedule"]
-       "node_labels" = {
-         "workload.sas.com/class" = "cas"
-       }
-       "custom_data" = ""
-       "metadata_http_endpoint"               = "enabled"
-       "metadata_http_tokens"                 = "required"
-       "metadata_http_put_response_hop_limit" = 1
-     },
-     compute = {
-       "vm_type" = "m5.8xlarge"
-       "os_disk_type" = "gp2"
-       "os_disk_size" = 200
-       "os_disk_iops" = 0
-       "min_nodes" = 1
-       "max_nodes" = 5
-       "node_taints" = ["workload.sas.com/class=compute:NoSchedule"]
-       "node_labels" = {
-         "workload.sas.com/class"        = "compute"
-         "launcher.sas.com/prepullImage" = "sas-programming-environment"
-       }
-       "custom_data" = ""
-       "metadata_http_endpoint"               = "enabled"
-       "metadata_http_tokens"                 = "required"
-       "metadata_http_put_response_hop_limit" = 1
-     },
-     connect = {
-       "vm_type" = "m5.8xlarge"
-       "os_disk_type" = "gp2"
-       "os_disk_size" = 200
-       "os_disk_iops" = 0
-       "min_nodes" = 1
-       "max_nodes" = 5
-       "node_taints" = ["workload.sas.com/class=connect:NoSchedule"]
-       "node_labels" = {
-         "workload.sas.com/class"        = "connect"
-         "launcher.sas.com/prepullImage" = "sas-programming-environment"
-       }
-       "custom_data" = ""
-       "metadata_http_endpoint"               = "enabled"
-       "metadata_http_tokens"                 = "required"
-       "metadata_http_put_response_hop_limit" = 1
-     },
-     stateless = {
-       "vm_type" = "m5.4xlarge"
-       "os_disk_type" = "gp2"
-       "os_disk_size" = 200
-       "os_disk_iops" = 0
-       "min_nodes" = 1
-       "max_nodes" = 5
-       "node_taints" = ["workload.sas.com/class=stateless:NoSchedule"]
-       "node_labels" = {
-         "workload.sas.com/class" = "stateless"
-       }
-       "custom_data" = ""
-       "metadata_http_endpoint"               = "enabled"
-       "metadata_http_tokens"                 = "required"
-       "metadata_http_put_response_hop_limit" = 1
-     },
-     stateful = {
-       "vm_type" = "m5.4xlarge"
-       "os_disk_type" = "gp2"
-       "os_disk_size" = 200
-       "os_disk_iops" = 0
-       "min_nodes" = 1
-       "max_nodes" = 3
-       "node_taints" = ["workload.sas.com/class=stateful:NoSchedule"]
-       "node_labels" = {
-         "workload.sas.com/class" = "stateful"
-       }
-       "custom_data" = ""
-       "metadata_http_endpoint"               = "enabled"
-       "metadata_http_tokens"                 = "required"
-       "metadata_http_put_response_hop_limit" = 1
-     }
-   }
+
+   # Deleted by KORAND
+
 
    # Jump Server
    create_jump_vm                        = true
