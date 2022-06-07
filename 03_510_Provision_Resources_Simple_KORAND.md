@@ -1,6 +1,6 @@
 ![Global Enablement & Learning](https://gelgitlab.race.sas.com/GEL/utilities/writing-content-in-markdown/-/raw/master/img/gel_banner_logo_tech-partners.jpg)
 
-# Provision the resources in AWS
+# (SIMPLE) Provision the resources in AWS
 
 - [Acquiring tools](#acquiring-tools)
 - [Simplify commands](#simplify-commands)
