@@ -299,9 +299,9 @@ With these preliminary prerequisites in place, it's time to proceed with deployi
    # V4_CFG_CADENCE_VERSION: '2022.1' # by KORAND
 
    ## CAS Configuration
-   V4_CFG_CAS_WORKER_COUNT: '3'
-   V4_CFG_CAS_ENABLE_BACKUP_CONTROLLER: false
-   V4_CFG_CAS_ENABLE_LOADBALANCER: true
+   # V4_CFG_CAS_WORKER_COUNT: '3'                  # by KORAND
+   # V4_CFG_CAS_ENABLE_BACKUP_CONTROLLER: false    # by KORAND
+   # V4_CFG_CAS_ENABLE_LOADBALANCER: true          # by KORAND
 
    # Monitoring and logging tools
    V4M_BASE_DOMAIN: "${V4_CFG_INGRESS_FQDN}"
