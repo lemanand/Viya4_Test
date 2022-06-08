@@ -274,7 +274,7 @@ echo $NS > ~/MY_NS.txt
    ## Cluster config
    kubernetes_version                      = "1.20"
    default_nodepool_node_count             = 1
-   default_nodepool_vm_type                = "m5.large"
+   default_nodepool_vm_type                = "r5.4xlarge"
    default_nodepool_custom_data            = ""
 
    ## General
@@ -285,7 +285,7 @@ echo $NS > ~/MY_NS.txt
    cluster_node_pool_mode   = "minimal"
    node_pools = {
      cas = {
-       "vm_type"            = "r5.xlarge"
+       "vm_type"            = "r5.4xlarge"
        "cpu_type"           = "AL2_x86_64"
        "os_disk_type"       = "gp2"
        "os_disk_size"       = 200
@@ -302,7 +302,7 @@ echo $NS > ~/MY_NS.txt
        "metadata_http_put_response_hop_limit" = 1
      },
      generic = {
-       "vm_type"            = "m5.2xlarge"
+       "vm_type"            = "r5.4xlarge"
        "cpu_type"           = "AL2_x86_64"
        "os_disk_type"       = "gp2"
        "os_disk_size"       = 200
